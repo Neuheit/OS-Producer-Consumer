@@ -18,7 +18,8 @@ int main() {
     sem_t* avail = sem_open("available", O_CREAT, 0666, 2);
     sem_t* mutex = sem_open("mutex", O_CREAT,0666, 1);
 
-    // Here we wait until an item is consumed. We then wait a random
+    // Here we wait until space is available in 
+    // the shared buffer. We then wait a random
     // number of ms, use mutual exclusion on 
     // incrementing the table, and signaling 
     // the fill semaphore for the consumer side
