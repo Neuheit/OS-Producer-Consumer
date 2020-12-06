@@ -11,11 +11,11 @@ int main() {
     // Allocated shared memory and semaphores.
 
     int shm_fd = shm_open("table", O_RDWR, 0666);
-    int* table = mmap(0,sizeof(int), PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
+    int* table = mmap(0, sizeof(int), PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
 
-    sem_t* fill = sem_open("fill", O_CREAT,0666,0);
+    sem_t* fill = sem_open("fill", O_CREAT, 0666, 0);
     sem_t* avail = sem_open("available", O_CREAT, 0666, 2);
-    sem_t* mutex = sem_open("mutex", O_CREAT,0666,1);
+    sem_t* mutex = sem_open("mutex", O_CREAT, 0666, 1);
 
     // Here we wait until the producer produces
     // an item, wait a random number of ms, 
