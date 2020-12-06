@@ -12,11 +12,11 @@ int main() {
     // Allocated shared memory and semaphores.
     int tbl = shm_open("table", O_CREAT | O_RDWR, 0666);
     ftruncate(tbl,sizeof(int));
-    int* table = mmap(0,sizeof(int), PROT_READ | PROT_WRITE, MAP_SHARED, tbl, 0);
+    int* table = mmap(0, sizeof(int), PROT_READ | PROT_WRITE, MAP_SHARED, tbl, 0);
 
-    sem_t* fill = sem_open("fill", O_CREAT,0666,0);
+    sem_t* fill = sem_open("fill", O_CREAT,0666, 0);
     sem_t* avail = sem_open("available", O_CREAT, 0666, 2);
-    sem_t* mutex = sem_open("mutex", O_CREAT,0666,1);
+    sem_t* mutex = sem_open("mutex", O_CREAT,0666, 1);
 
     // Here we wait until an item is consumed. We then wait a random
     // number of ms, use mutual exclusion on 
