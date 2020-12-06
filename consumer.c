@@ -17,8 +17,8 @@ int main() {
     sem_t* avail = sem_open("available", O_CREAT, 0666, 2);
     sem_t* mutex = sem_open("mutex", O_CREAT, 0666, 1);
 
-    // Here we wait until the producer produces
-    // an item, wait a random number of ms, 
+    // Here we wait until there is an item in 
+    // the table, wait a random number of ms, 
     // use mutual exclusion to decrement the items
     // and signal the available semaphore, 
     // which the producer will wait on.
