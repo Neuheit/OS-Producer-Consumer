@@ -23,7 +23,7 @@ int main() {
     // and signal the available semaphore, 
     // which the producer will wait on.
 
-    int loop = 10;  
+    int loop = 20;  
     printf("\nConsumer ready to receive %d items.\n", loop);
 
     for(int i = 1; i < loop; ++i) {
