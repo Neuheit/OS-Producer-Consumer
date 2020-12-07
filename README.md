@@ -6,7 +6,7 @@ An extra credit assignment for my Operating Systems course, demonstrating a solu
 - GCC
 
 # Description
-These programs use shared memory and semaphores to properly syncronize data to each other. The producer will first wait a random interval to create an item (incrementing the shared integer) and write it to the shared buffer. The consumer will also wait a random interval to read this shared integer, decrement it, and write it back to the shared buffer. It will repeat this 6 times. After this both programs will deallocate their shared memory and semaphores.
+These programs use shared memory and semaphores to properly syncronize data to each other. The producer will first wait a random interval to create an item (incrementing the shared integer) and write it to the shared buffer. The consumer will also wait a random interval to read this shared integer, decrement it, and write it back to the shared buffer. It will repeat this 20 times. After this both programs will deallocate their shared memory and semaphores.
 
 # Syncronization
 To ensure that only 2 items exist in the buffer at a time, 3 semaphores are used: 
