@@ -1,5 +1,5 @@
 # OS-Producer-Consumer
-An extra credit assignment for my Operating Systems course. 
+An extra credit assignment for my Operating Systems course, demonstrating a solution to the Producer-Consumer problem. 
 
 # Requirements
 - Any Linux Distribution
