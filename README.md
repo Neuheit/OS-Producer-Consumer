@@ -28,14 +28,43 @@ $ ./producer & ./consumer &
 # Example Output
 
 ```
-Producer ready to create 6 items.
+Producer ready to create 20 items.
 
-Consumer ready to receive 6 items.
+Consumer ready to receive 20 items.
+
 Item produced, there are now 1 item(s) in the table.
 Item produced, there are now 2 item(s) in the table.
 Item consumed, 1 remaining.
 Item consumed, 0 remaining.
 Item produced, there are now 1 item(s) in the table.
+Item produced, there are now 2 item(s) in the table.
+Item consumed, 1 remaining.
+Item produced, there are now 2 item(s) in the table.
+Item consumed, 1 remaining.
+Item produced, there are now 2 item(s) in the table.
+Item consumed, 1 remaining.
+Item produced, there are now 2 item(s) in the table.
+Item consumed, 1 remaining.
+Item produced, there are now 2 item(s) in the table.
+Item consumed, 1 remaining.
+Item consumed, 0 remaining.
+Item produced, there are now 1 item(s) in the table.
+Item produced, there are now 1 item(s) in the table.
+Item consumed, 0 remaining.
+Item produced, there are now 2 item(s) in the table.
+Item consumed, 1 remaining.
+Item consumed, 0 remaining.
+Item produced, there are now 1 item(s) in the table.
+Item produced, there are now 2 item(s) in the table.
+Item consumed, 1 remaining.
+Item consumed, 0 remaining.
+Item produced, there are now 1 item(s) in the table.
+Item consumed, 0 remaining.
+Item produced, there are now 1 item(s) in the table.
+Item produced, there are now 2 item(s) in the table.
+Item consumed, 1 remaining.
+Item produced, there are now 2 item(s) in the table.
+Item consumed, 1 remaining.
 Item consumed, 0 remaining.
 Item produced, there are now 1 item(s) in the table.
 Item consumed, 0 remaining.
