@@ -26,7 +26,7 @@ int main() {
     // which will cause it to wait if there are
     // no items in the shared memory.
     
-    int loop = 6;  
+    int loop = 10;  
     printf("\nProducer ready to create %d items.\n", loop);
 
     for(int i = 1; i < loop; ++i) {
